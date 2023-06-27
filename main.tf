@@ -15,7 +15,6 @@ provider "docker" {
 resource "docker_image" "ubuntu" {
   name = "nginx:latest"
   force_remove = true
-  no_cache = true
 }
 
 # Create a container
